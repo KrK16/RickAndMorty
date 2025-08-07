@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricak and Morty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="text-center mb-8">
+      <h1 class="gradient-title">Rick & Morty</h1>
+      <p class="subtitle">Visor de Personajes</p>
+      <div class="stats-bar">
+        <div class="stat-box">
+          <span class="stat-icon">❤️</span>
+          <span class="stat-label" id="totalLikesLabel">0 Likes</span>
+        </div>
+        <div class="stat-box stat-dislike">
+          <span class="stat-icon">👎</span>
+          <span class="stat-label" id="totalDislikesLabel">0 Dislikes</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="contador-global" class="contador-container"></div>
+
+
+    <div id="filtros">
+        <input type="text" id="filtroNombre" placeholder="filtro de nombres">
+        <select name="" id="filtroEstado">
+            <option value="">Filtrar por estado</option>
+            <option value="alive">alive</option>
+            <option value="dead"> dead</option>
+            <option value="unknown">unknown</option>
+        </select>
+        <input type="text" id="filtroEspecie" placeholder="Filtro de especies">
+    </div>
+
+    <div class="container">
+        <div id="personajes"></div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
